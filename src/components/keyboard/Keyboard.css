@@ -1,0 +1,26 @@
+.keyboard-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(75px,1fr));
+    margin-top: 90px;
+    margin-bottom: 20px;
+    gap:.5rem;
+    align-self: stretch;
+}
+.keyboard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: rgba(255,255,255,0.5);
+    border:3px solid black;
+    color:black;
+    padding:.5rem;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+}
+.keyboard:hover:not(:disabled), .keyboard:focus:not(:disabled) {
+    background-color: hsl(40,100%,75%);
+}
